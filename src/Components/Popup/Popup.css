@@ -199,70 +199,12 @@
 }
 
 @media (max-width: 480px) {
-  .ad-popup-container {
-    width: 95%;
-    max-width: 360px;
-    padding: 0.8rem;
-    border-radius: 12px;
-    aspect-ratio: auto; /* Remove strict square constraint */
-  }
-
-  .popup-background-text {
-    font-size: 1.5rem;
-    line-height: 1.1;
-    top: 16px;
-  }
-
-  .popup-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .popup-left,
-  .popup-right {
-    text-align: center;
-    align-items: center;
-    flex: unset;
-  }
-
-  .popup-center {
-    margin-top: 0.5rem;
-  }
-
-  .popup-image {
-    max-width: 120px;
-    height: auto;
-    margin-top: 1.5rem;
-  }
-
-  .exam-box {
-    font-size: 0.85rem;
-    padding: 6px 10px;
-    margin-top: 0.5rem;
-  }
-
-  .popup-footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-    margin-top: 0.8rem;
-  }
-
-  .popup-contact {
-    font-size: 0.8rem;
-    text-align: center;
-    color: #d9ecff;
-  }
-
-  .contact-line {
-    justify-content: center;
-  }
-
-  .close-button {
-    font-size: 1.3rem;
-    top: 8px;
-    right: 10px;
-  }
+   
+ .ad-popup-container {
+  width: 70%;
+  max-width: 380px;
+  aspect-ratio: 2 / 3;
 }
+}
+
+
