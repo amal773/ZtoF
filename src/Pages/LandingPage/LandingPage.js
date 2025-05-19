@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Slider from "react-slick";
 import Card from "../../Components/Card/Card"
 import "./LandingPage.css";
@@ -11,6 +11,8 @@ import i1 from "../../Images/i1.jpg";
 import i2 from "../../Images/i2.jpg";
 import i3 from "../../Images/i3.jpg";
 import i4 from "../../Images/i4.jpg";
+import Popup from "../../Components/Popup/Popup";
+
 
 const sliderSettings = {
   dots: true,
@@ -49,9 +51,22 @@ const facultyData = [
 
 
 export default function LandingPage() {
+   const [isPopupOpen, setPopupOpen] = useState(false); 
+
+   useEffect(()=>{
+     const timer = setTimeout(()=>{
+      setPopupOpen(true)
+     }, 2000)
+     return ()=>clearTimeout(timer)
+   }, [])
   return (
+    
     <div className="landing-container">
       <Navbar />
+      <div>
+      
+      {isPopupOpen && <Popup onClose={() => setPopupOpen(false)} />}
+    </div>
 
       {/* Home Section */}
       <section className="section home-section" id="home">
