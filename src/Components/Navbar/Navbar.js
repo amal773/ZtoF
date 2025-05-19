@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../../Images/logo.jpg";
+import logo from "../../Images/logo.png";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">
@@ -10,7 +14,14 @@ export default function Navbar() {
         <span className="navbar-title">ZtoF</span>
         <div className="navbar-divider" />
       </div>
-      <ul className="navbar-menu">
+
+      <div className="burger" onClick={toggleMenu}>
+        <div className={`line ${menuOpen ? "open" : ""}`}></div>
+        <div className={`line ${menuOpen ? "open" : ""}`}></div>
+        <div className={`line ${menuOpen ? "open" : ""}`}></div>
+      </div>
+
+      <ul className={`navbar-menu ${menuOpen ? "open" : ""}`}>
         <li><a href="#home">Home <span className="nav-icon">+</span></a></li>
         <li><a href="#director">Director <span className="nav-icon">+</span></a></li>
         <li><a href="#faculty">Faculty <span className="nav-icon">+</span></a></li>
