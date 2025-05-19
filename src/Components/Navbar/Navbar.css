@@ -18,8 +18,9 @@
   }
   
   .navbar-logo {
-    height: 40px;
+    height: 50px;
     width: auto;
+    padding: 0 2rem;
   }
   
   .navbar-title {
@@ -31,10 +32,11 @@
   
   .navbar-divider {
     width: 2px;
-    height: 30px;
+    height: 3rem;
     background: linear-gradient(to bottom left, #4a5568, #cbd5e0);
     transform: rotate(25deg);
     margin-left: 1rem;
+    
   }
   
   .navbar-menu {
