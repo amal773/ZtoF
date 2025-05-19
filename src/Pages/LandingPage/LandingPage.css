@@ -556,3 +556,23 @@
 }
 
 
+@media (max-width: 768px) {
+  .home-section,
+  .director-section,
+  .faculty-carousel-section,
+  .highlights-section,
+  .tutorial-section,
+  .section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .home-text,
+  .director-text,
+  .faculty-intro,
+  .highlight-intro,
+  .tutorial-subtitle {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
