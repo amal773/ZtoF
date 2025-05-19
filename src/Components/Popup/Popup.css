@@ -14,7 +14,7 @@
 .ad-popup-container {
   background: linear-gradient(to bottom, #3399ff, #001f4d);
   width: 90%;
-  max-width: 400px;
+  max-width: 380px;
   aspect-ratio: 1 / 1;
   border-radius: 15px;
   padding: 1rem;
@@ -44,7 +44,7 @@
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.8rem;
+  font-size: 2.1rem;
   font-weight: 1000;
   color: rgba(255, 255, 255, 0.93);
   z-index: 0;
@@ -75,7 +75,7 @@
 
 .popup-image {
   max-width: 150px;
-  height: auto;
+  height: 180px;
   padding: 5px;
   margin-top: 3rem;
 }
@@ -196,4 +196,73 @@
 .contact-icon {
   color: #ffffff;
   font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .ad-popup-container {
+    width: 95%;
+    max-width: 360px;
+    padding: 0.8rem;
+    border-radius: 12px;
+    aspect-ratio: auto; /* Remove strict square constraint */
+  }
+
+  .popup-background-text {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    top: 16px;
+  }
+
+  .popup-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .popup-left,
+  .popup-right {
+    text-align: center;
+    align-items: center;
+    flex: unset;
+  }
+
+  .popup-center {
+    margin-top: 0.5rem;
+  }
+
+  .popup-image {
+    max-width: 120px;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .exam-box {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    margin-top: 0.5rem;
+  }
+
+  .popup-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .popup-contact {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #d9ecff;
+  }
+
+  .contact-line {
+    justify-content: center;
+  }
+
+  .close-button {
+    font-size: 1.3rem;
+    top: 8px;
+    right: 10px;
+  }
 }
