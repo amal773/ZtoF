@@ -1,0 +1,558 @@
+/* Root container */
+.landing-container {
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc;
+}
+
+/* ------------------ Home Section ------------------ */
+.home-section {
+  background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.home-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.home-text p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.home-image {
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  background: none;
+  box-shadow: none;
+}
+
+/* ------------------ Landing Header ------------------ */
+.landing-header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.landing-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.landing-subtitle {
+  margin-top: 1rem;
+  color: #4a5568;
+  font-size: 1.125rem;
+}
+
+/* CTA Button */
+.landing-button {
+  margin-top: 1.5rem;
+}
+
+.landing-cta-button {
+  background-color: #2b6cb0;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landing-cta-button:hover {
+  background-color: #2c5282;
+}
+
+/* ------------------ Feature Cards ------------------ */
+.landing-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .landing-features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.03);
+}
+
+.feature-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  color: #718096;
+  font-size: 1rem;
+}
+
+/* Director Section */
+.director-section {
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  padding: 4rem 2rem;
+  color: #1a202c; /* Dark text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.director-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.director-photo {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.director-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.director-text {
+  flex: 1.2;
+  min-width: 300px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.director-text .section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+/* ------------------ Faculty Carousel ------------------ */
+.faculty-carousel {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; /* optional outer padding */
+}
+
+.faculty-carousel .slick-slide {
+  padding: 0 !important;
+  box-sizing: border-box;
+  opacity: 0.7;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+  filter: grayscale(20%);
+  transform-origin: center center;
+}
+
+.faculty-carousel .slick-center {
+  opacity: 1;
+  filter: grayscale(0);
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+}
+
+.faculty-carousel .slick-dots {
+  bottom: -30px;
+}
+
+.faculty-carousel .card-wrapper {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.faculty-carousel .card-wrapper > div {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* Faculty Intro Paragraph */
+.faculty-intro {
+  max-width: 900px;
+  margin: 0 auto 2.5rem; /* center and add bottom space */
+  font-size: 1.15rem;
+  color: #2d3748; /* dark slate gray */
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  background: #ebf8ff; /* subtle light blue background */
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(43, 108, 176, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.faculty-intro:hover {
+  box-shadow: 0 10px 25px rgba(43, 108, 176, 0.3);
+}
+
+
+
+/* ------------------ Highlights Section ------------------ */
+.highlights-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #fefefe, #edf2f7);
+  text-align: center;
+}
+
+.highlight-intro {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #4a5568;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.highlight-image {
+  width: 100%;
+  height: 220px; /* Fixed height for uniform look */
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover; /* Crop to fit container */
+  object-position: center; /* Center the image crop */
+}
+
+
+.highlight-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Tutorials Section */
+.tutorial-section {
+  padding: 4rem 2rem;
+  background: #f9fbfd;
+  color: #1a202c;
+}
+
+.tutorial-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2b6cb0;
+  text-align: center;
+}
+
+.tutorial-subtitle {
+  font-size: 1.125rem;
+  color: #4a5568;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.tutorial-cards-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tutorial-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.tutorial-card a {
+  display: inline-block;
+  color: #3182ce;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+
+.tutorial-card a:hover {
+  color: #2c5282;
+  text-decoration: underline;
+}
+
+.tutorial-card ul {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.tutorial-card ul li {
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+}
+
+
+.tutorial-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.tutorial-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+}
+
+.tutorial-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #204080;
+  font-weight: 600;
+}
+
+.tutorial-description {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.tutorial-link {
+  font-weight: 500;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.tutorial-link:hover {
+  text-decoration: underline;
+}
+
+.tutorial-links a {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.tutorial-links a:hover {
+  text-decoration: underline;
+}
+
+.home-section {
+  position: relative;
+  background: linear-gradient(90deg, 
+    #a3c9f1 0%,      /* darker light blue on left */
+    #89c3b0 50%,     /* soft teal in middle */
+    #c7f0d1 100%     /* light green on right */
+  );
+  color: #124264;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 25% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 60%),
+    radial-gradient(circle at 65% 40%, rgba(255, 255, 255, 0.15) 0%, transparent 55%),
+    radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.18) 0%, transparent 50%);
+  filter: blur(25px);
+  z-index: 1;
+}
+
+.home-content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.section{
+   padding: 4rem 0;
+}
+
+
+
+/* Root container */
+.landing-container {
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc;
+}
+
+/* Home Section - very very light blue gradient */
+.home-section {
+  background: linear-gradient(90deg,
+    #e7f2ff 0%,   /* ultra-light blue */
+    #d0e9ff 50%,  /* very light blue */
+    #c6e5f5 100%  /* pale blue */
+  );
+  color: #1a3a66; /* soft dark blue text */
+  padding: 60px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* Director Section - very very light blue gradient with subtle green tint */
+.director-section {
+  background: linear-gradient(135deg,
+    #f0fbff 0%,    /* almost white with a hint of blue */
+    #def7f1 50%,   /* very light blue-green */
+    #d1f0e8 100%   /* pale blue-green */
+  );
+  color: #0a2e6b; /* soft dark blue text */
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(10, 46, 107, 0.05);
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.director-text .section-title {
+  color: #07427a; /* soft dark blue */
+}
+
+
+
+
+/* ------------------ Faculty Carousel Section ------------------ */
+.faculty-carousel-section {
+  background: linear-gradient(120deg, #f0f4ff 0%, #c5d4ff 100%);
+  padding: 4rem 2rem;
+  color: #1a237e; /* deep blue */
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(50, 70, 150, 0.1);
+}
+
+/* ------------------ Highlights Section ------------------ */
+.highlights-section {
+  background: linear-gradient(135deg, #fefefe, #e1f5fe);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(30, 130, 210, 0.1);
+  color: #1565c0; /* strong blue */
+}
+
+/* ------------------ Tutorials Section ------------------ */
+.tutorial-section {
+  background: linear-gradient(135deg, #f9fbfd, #dff3f7);
+  color: #0d3b66; /* rich dark blue */
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(13, 59, 102, 0.1);
+}
+
+/* General Section Padding */
+.section {
+  padding: 4rem 0;
+}
+
+

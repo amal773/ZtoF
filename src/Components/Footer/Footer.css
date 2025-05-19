@@ -1,0 +1,83 @@
+.footer {
+  background: linear-gradient(to right, #f9fafb, #f1f5f9);
+  padding: 3rem 1rem 2rem;
+  color: #334155;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  border-top: 2px solid #e2e8f0;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-info h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.footer-info p,
+.footer-contact p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.footer-contact a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.footer-social h4 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 0.7rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #2563eb;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons a[aria-label="Instagram"]:hover {
+  color: #e1306c;
+}
+.social-icons a[aria-label="YouTube"]:hover {
+  color: #ff0000;
+}
+.social-icons a[aria-label="WhatsApp"]:hover {
+  color: #25d366;
+}
+.social-icons a[aria-label="Telegram"]:hover {
+  color: #0088cc;
+}
+
+.footer-bottom {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+}
