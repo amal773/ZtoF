@@ -4,7 +4,6 @@
   font-family: 'Arial', sans-serif;
   background-color: #f7fafc;
 }
-
 /* ------------------ Home Section ------------------ */
 .home-section {
   background: linear-gradient(135deg, #ebf8ff, #bee3f8);
@@ -474,12 +473,7 @@
 
 
 
-/* Root container */
-.landing-container {
-  min-height: 100vh;
-  font-family: 'Arial', sans-serif;
-  background-color: #f7fafc;
-}
+
 
 /* Home Section - very very light blue gradient */
 .home-section {
@@ -592,5 +586,35 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.faculty-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.faculty-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.faculty-intro {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+.faculty-carousel {
+  padding: 0 10px;
 }
 

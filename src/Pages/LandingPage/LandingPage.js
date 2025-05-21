@@ -12,6 +12,7 @@ import i2 from "../../Images/i2.jpg";
 import i3 from "../../Images/i3.jpg";
 import i4 from "../../Images/i4.jpg";
 import Popup from "../../Components/Popup/Popup";
+import TopBar from "../../Components/TopBar/TopBar";
 
 
 const sliderSettings = {
@@ -62,6 +63,7 @@ export default function LandingPage() {
   return (
 
     <div className="landing-container">
+      <TopBar />
       <Navbar />
       <div>
 
@@ -165,7 +167,7 @@ export default function LandingPage() {
         <div className="tutorial-cards-container">
           {/* YouTube Channel */}
           <div className="tutorial-card">
-            <h3 className="tutorial-title">Official YouTube Channel</h3>
+            
 
             <div className="youtube-video-wrapper">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/vMtwNjDOYoY?si=zK3v0qsdgxgalRgn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -190,7 +192,7 @@ export default function LandingPage() {
 
           {/* Demo Classes */}
           <div className="tutorial-card">
-            <h3 className="tutorial-title">Demo Class 1</h3>
+          
             <div className="youtube-video-wrapper">
               <iframe
                 src="https://www.youtube.com/embed/R4UJQlf6yas?si=jNxeBMVxVKAlQB50"
@@ -206,7 +208,6 @@ export default function LandingPage() {
 
           {/* Demo Classes */}
           <div className="tutorial-card">
-            <h3 className="tutorial-title">Demo Class 2</h3>
             <div className="youtube-video-wrapper">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/2JtxAFBrwr8?si=SkQpWY4m-cU-gkhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -216,7 +217,6 @@ export default function LandingPage() {
 
           {/* Demo Classes */}
           <div className="tutorial-card">
-            <h3 className="tutorial-title">Demo Class 3</h3>
             <div className="youtube-video-wrapper">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/PU_zbeocSvs?si=VR0XqA8sGMf58Ezv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -230,7 +230,6 @@ export default function LandingPage() {
 
           {/* App Guide */}
           <div className="tutorial-card">
-            <h3 className="tutorial-title">App Usage Guide</h3>
             <div className="youtube-video-wrapper">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/9h56DFFBZro?si=AD6gRyjYLkxZQy6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -241,7 +240,6 @@ export default function LandingPage() {
 
           {/* App Demo */}
           <div className="tutorial-card">
-            <h3 className="tutorial-title">Demo Class on Our App</h3>
             <p className="tutorial-description">Access premium demo sessions right within our mobile app.</p>
             <a
               className="tutorial-link"
