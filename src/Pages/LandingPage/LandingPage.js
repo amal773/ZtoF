@@ -15,6 +15,7 @@ import Popup from "../../Components/Popup/Popup";
 import TopBar from "../../Components/TopBar/TopBar";
 
 
+
 const sliderSettings = {
   dots: true,
   infinite: true,
@@ -68,6 +69,7 @@ export default function LandingPage() {
       <div>
 
         {isPopupOpen && <Popup onClose={() => setPopupOpen(false)} />}
+      
       </div>
 
       {/* Home Section */}
