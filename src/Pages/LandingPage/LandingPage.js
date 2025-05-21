@@ -118,6 +118,7 @@ export default function LandingPage() {
       </section>
 
 
+      {/* Faculty Section */}
       <section className="faculty-section" id="faculty">
         <div className="faculty-container">
           <h2 className="section-title">Our Esteemed Faculty</h2>
@@ -144,7 +145,7 @@ export default function LandingPage() {
         <h2 className="section-title">Life at ZtoF</h2>
         <p className="highlight-intro">
           Here’s a glimpse into the dynamic learning environment, energetic sessions, and memorable moments at ZtoF Coaching Institute.
-        </p>
+        </p>  
         <div className="highlights-grid">
           <img src={i1} alt="ZtoF Highlight 1" className="highlight-image" />
           <img src={i2} alt="ZtoF Highlight 2" className="highlight-image" />
