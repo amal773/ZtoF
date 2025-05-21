@@ -600,10 +600,6 @@
   text-align: center;
 }
 
-.home-image-wrapper {
-    width: 100%; /* or try 100% if still too large */
-    margin: 0 auto; /* center the image if needed */
-  }
 
   .home-image-wrapper img {
     width: 100%;   /* make the image shrink to container width */
