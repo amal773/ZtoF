@@ -13,6 +13,7 @@ import i3 from "../../Images/i3.jpg";
 import i4 from "../../Images/i4.jpg";
 import Popup from "../../Components/Popup/Popup";
 import TopBar from "../../Components/TopBar/TopBar";
+import CallInfo from "../../Components/CallInfo/CallInfo";
 
 
 
@@ -69,7 +70,7 @@ export default function LandingPage() {
       <div>
 
         {isPopupOpen && <Popup onClose={() => setPopupOpen(false)} />}
-      
+
       </div>
 
       {/* Home Section */}
@@ -88,17 +89,25 @@ export default function LandingPage() {
               Services sectors, our comprehensive courses and expert guidance will help you crack some of
               the most prestigious exams in the country.
             </p>
-            <p>
-              We provide a range of tailor-made coaching programs for exams such as JEE, NEET, UPSC, RPSC,
-              and many other state and national competitive exams. Our experienced faculty, proven study
-              materials, and personalized mentorship ensure that every student is equipped with the right
-              knowledge and skills to excel.
-            </p>
-            <p>
-              Join ZtoF Coaching Institute and set the foundation for your successful career, with a
-              step-by-step approach to passing your competitive exams with flying colours!
-            </p>
+
+            {/* New content added below */}
+            <div className="home-courses-grid">
+              <h3 className="courses-title">Courses We Offer</h3>
+              <div className="course-grid">
+                <div className="course-card">NORCET-9</div>
+                <div className="course-card">KGMU</div>
+                <div className="course-card">RML</div>
+                <div className="course-card">GMCH</div>
+                <div className="course-card">JIPMER</div>
+                <div className="course-card">UPUMS</div>
+                <div className="course-card">DSSB</div>
+                <div className="course-card">PGI</div>
+              </div>
+            </div>
+
+
           </div>
+
           <div className="home-image-wrapper">
             <img src={homeImage} alt="ZtoF Coaching" />
           </div>
@@ -149,7 +158,7 @@ export default function LandingPage() {
         <h2 className="section-title">Life at ZtoF</h2>
         <p className="highlight-intro">
           Here’s a glimpse into the dynamic learning environment, energetic sessions, and memorable moments at ZtoF Coaching Institute.
-        </p>  
+        </p>
         <div className="highlights-grid">
           <img src={i1} alt="ZtoF Highlight 1" className="highlight-image" />
           <img src={i2} alt="ZtoF Highlight 2" className="highlight-image" />
@@ -169,7 +178,7 @@ export default function LandingPage() {
         <div className="tutorial-cards-container">
           {/* YouTube Channel */}
           <div className="tutorial-card">
-            
+
 
             <div className="youtube-video-wrapper">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/vMtwNjDOYoY?si=zK3v0qsdgxgalRgn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -189,12 +198,12 @@ export default function LandingPage() {
             </a>
           </div>
 
-          
+
 
 
           {/* Demo Classes */}
           <div className="tutorial-card">
-          
+
             <div className="youtube-video-wrapper">
               <iframe
                 src="https://www.youtube.com/embed/R4UJQlf6yas?si=jNxeBMVxVKAlQB50"
@@ -258,6 +267,7 @@ export default function LandingPage() {
       </section>
 
 
+      <CallInfo />
 
       <Footer />
     </div>

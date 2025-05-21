@@ -4,7 +4,11 @@
   width: 100%;
   z-index: 1000;
   
-  background-color: #fff;
+   background: linear-gradient(90deg,
+    #B5FCCD 0%,  /* very light blue */
+    #7AC6D2 50%,  /* pale blue */
+     #3D90D7 100%  /* pale blue */
+  );
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;

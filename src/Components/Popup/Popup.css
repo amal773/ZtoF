@@ -37,3 +37,48 @@
   cursor: pointer;
   z-index: 2;
 }
+
+.popup-offer-content {
+  background-color: #3889cb;
+  padding: 1rem;
+  text-align: center;
+  color: #1a202c;
+  font-family: 'Arial', sans-serif;
+}
+
+.popup-offer-content h3 {
+  font-size: 1.6rem;
+  color: #c02911;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.popup-offer-content p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.popup-offer-content .original-price {
+  text-decoration: line-through;
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.popup-offer-content .highlight-text {
+  color: #a8bb1d;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.blink-fast {
+  animation: blink 0.5s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+

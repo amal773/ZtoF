@@ -9,8 +9,8 @@ const TopBar = () => {
           <a href="tel:+918690989822" className="top-bar-link">
             <i className="fa-solid fa-phone"></i> +91 8690989822
           </a>
-          <a href="mailto:z2f@gmail.com" className="top-bar-link">
-            <i className="fa-solid fa-envelope"></i> z2f@gmail.com
+          <a href="mailto:Zerotofinalmedicalandnursingacademy@gmail.com" className="top-bar-link">
+            <i className="fa-solid fa-envelope"></i> Zerotofinalmedicalandnursingacademy@gmail.com
           </a>
           <a href="#enquiry" className="top-bar-link help-link">
             Need Help?
@@ -19,12 +19,12 @@ const TopBar = () => {
 
         <div className="top-bar-right">
           <a
-            href="https://www.facebook.com/ztof_official"
+            href="https://t.me/Ramsirateacher"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Facebook"
+            aria-label="Telegram"
           >
-            <i className="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-telegram"></i>
           </a>
           <a
             href="https://twitter.com/"
@@ -51,15 +51,15 @@ const TopBar = () => {
             <i className="fa-brands fa-youtube"></i>
           </a>
           <a
-            href="https://www.pinterest.com/"
+            href="https://www.whatsapp.com/channel/0029Vb5930y3wtazT0xWhs0z"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Pinterest"
+            aria-label="Whatsapp"
           >
-            <i className="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-whatsapp"></i>
           </a>
           <a
-            href="https://www.instagram.com/ztof_official/"
+            href="https://www.instagram.com/ztof_official"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

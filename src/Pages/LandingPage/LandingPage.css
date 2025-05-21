@@ -6,7 +6,7 @@
 }
 /* ------------------ Home Section ------------------ */
 .home-section {
-  background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+  background: linear-gradient(to bottom, #3399ff, #0066cc, #001f4d);
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 0.75rem;
-  background: none;
+  /* background: none; */
   box-shadow: none;
 }
 
@@ -478,9 +478,9 @@
 /* Home Section - very very light blue gradient */
 .home-section {
   background: linear-gradient(90deg,
-    #e7f2ff 0%,   /* ultra-light blue */
-    #d0e9ff 50%,  /* very light blue */
-    #c6e5f5 100%  /* pale blue */
+    #A8F1FF 0%,   /* ultra-light blue */
+    #6FE6FC 50%,  /* very light blue */
+    #4ED7F1 100%  /* pale blue */
   );
   color: #1a3a66; /* soft dark blue text */
   padding: 60px 40px;
@@ -494,9 +494,9 @@
 /* Director Section - very very light blue gradient with subtle green tint */
 .director-section {
   background: linear-gradient(135deg,
-    #f0fbff 0%,    /* almost white with a hint of blue */
+    #ffffff 0%,    /* almost white with a hint of blue */
     #def7f1 50%,   /* very light blue-green */
-    #d1f0e8 100%   /* pale blue-green */
+    #2a7f90 100%   /* pale blue-green */
   );
   color: #0a2e6b; /* soft dark blue text */
   padding: 4rem 2rem;
@@ -623,4 +623,46 @@
 .faculty-carousel {
   padding: 0 10px;
 }
+
+.home-courses-grid {
+  margin-top: 2.5rem;
+  padding: 1rem 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.courses-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem 1.5rem;
+  padding: 0 1rem;
+}
+
+.course-card {
+  background-color: #D4EBF8;
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #1a202c;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  text-transform: uppercase;
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
