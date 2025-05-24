@@ -98,11 +98,11 @@ const facultyData = [
 export default function LandingPage() {
   const [isPopupOpen, setPopupOpen] = useState(false);
 
-  const [homeRef, homeVisible] = useInView();
-  const [directorRef, directorVisible] = useInView();
-  const [facultyRef, facultyVisible] = useInView();
-  const [highlightsRef, highlightsVisible] = useInView();
-  const [tutorialsRef, tutorialsVisible] = useInView();
+  const [homeRef, homeVisible] = useInView(0.1);
+  const [directorRef, directorVisible] = useInView(0.1);
+  const [facultyRef, facultyVisible] = useInView(0.1);
+  const [highlightsRef, highlightsVisible] = useInView(0.1);
+  const [tutorialsRef, tutorialsVisible] = useInView(0.1);
 
   useEffect(() => {
     const timer = setTimeout(() => {
