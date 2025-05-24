@@ -18,12 +18,10 @@ export default function Navbar() {
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
-    const offset = 80; // adjust this if your navbar is taller
+    const offset = 80; // Height of sticky navbar
     if (element) {
-      const bodyTop = document.body.getBoundingClientRect().top;
-      const elementTop = element.getBoundingClientRect().top;
-      const scrollPosition = elementTop - bodyTop - offset;
-      window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+      const topPosition = element.offsetTop - offset;
+      window.scrollTo({ top: topPosition, behavior: "smooth" });
     }
   };
 
@@ -47,8 +45,8 @@ export default function Navbar() {
             <a
               href={`#${item.href}`}
               onClick={(e) => {
-                e.preventDefault(); // prevent default anchor jump
-                scrollToSection(item.href); // custom scroll
+                e.preventDefault();
+                scrollToSection(item.href);
                 setMenuOpen(false);
               }}
             >
