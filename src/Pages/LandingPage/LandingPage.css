@@ -544,10 +544,7 @@
   box-shadow: 0 5px 20px rgba(13, 59, 102, 0.1);
 }
 
-/* General Section Padding */
-.section {
-  padding: 4rem 0;
-}
+
 
 
 @media (max-width: 768px) {
@@ -678,5 +675,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-
