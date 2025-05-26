@@ -145,7 +145,7 @@ export default function LandingPage() {
             <div className="home-courses-grid">
               <h3 className="courses-title">Courses We Offer</h3>
               <div className="course-grid">
-                <div className="course-card">NORCET-9</div>
+                <div className="course-card">NORCET</div>
                 <div className="course-card">KGMU</div>
                 <div className="course-card">RML</div>
                 <div className="course-card">GMCH</div>
@@ -153,6 +153,12 @@ export default function LandingPage() {
                 <div className="course-card">UPUMS</div>
                 <div className="course-card">DSSB</div>
                 <div className="course-card">PGI</div>
+                <div className="course-card">BHU</div>
+                <div className="course-card">CHO</div>
+                <div className="course-card">RRB</div>
+                <div className="course-card">ESIC</div>
+                <div className="course-card">SPGI</div>
+                <div className="course-card">NHM</div>
               </div>
             </div>
           </div>
