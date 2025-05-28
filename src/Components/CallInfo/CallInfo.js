@@ -21,7 +21,7 @@ export default function CallInfo() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-whatsapp"></i> +918690989822
+              <i className="fab fa-whatsapp"></i> +918690989822
             </a>
           </div>
         </div>
